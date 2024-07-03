@@ -484,9 +484,9 @@ article.container:is(:hover, :focus-within)::-webkit-scrollbar-thumb {
 article.container::-webkit-scrollbar-thumb {
   height: 10px;
 }
-.section:not(:last-child) {
+.section {
   -webkit-margin-after: 16px;
-  margin-block-end: 16px;
+  margin-block-end: 40px;
 }
 /* current-weather-card */
 .current-weather-card .weapper {
@@ -667,6 +667,7 @@ footer {
   bottom: 0;
   width: 100%;
   background-color: var(--background);
+  margin-top: 20px;
 }
 footer .footer {
   color: var(--on-background);
