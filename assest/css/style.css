@@ -484,17 +484,6 @@ article.container:is(:hover, :focus-within)::-webkit-scrollbar-thumb {
 article.container::-webkit-scrollbar-thumb {
   height: 10px;
 }
-article.container::before {
-  content: "";
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 40px;
-  background-image: var(--gradient-1);
-  pointer-events: none;
-  z-index: 1;
-}
 .section:not(:last-child) {
   -webkit-margin-after: 16px;
   margin-block-end: 16px;
@@ -690,33 +679,19 @@ article.container::before {
 }
 
 /* footer */
-
-.footer,
-footer .body-3:last-child {
+footer .footer{
+  color: var(--on-background);
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  background-color: var(--black-alpha-10);
+  padding: 10px;
 }
-.footer {
-  color: var(--on-surface-variant);
-  text-align: center;
-  gap: 12px 24px;
-  -webkit-margin-before: 28px;
-  margin-block-start: 28px;
-}
-.fade-in .footer {
-  display: flex;
-}
-.footer .body-3:last-child {
-  gap: 6px;
-}
-.footer a {
-  display: inline;
-}
-.footer p:last-child {
-  display: inline;
+footer a {
+  margin-left: 5px;
+  color: darkred;
+  font-size: 20px;
 }
 
 /* loading */
