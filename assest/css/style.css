@@ -596,23 +596,6 @@ article.container::-webkit-scrollbar-thumb {
   font-weight: var(--weight-semiBold);
   cursor: help;
 }
-.badge ~ .badge-message {
-  position: absolute;
-  top: -15px;
-  left: 50%;
-  transform: translateX(-50%);
-  white-space: nowrap;
-  width: fit-content;
-  font-size: 10px;
-  padding: 5px 10px;
-  display: none;
-  border-radius: var(--radius-pill);
-  background-color: var(--background);
-  opacity: 0.7;
-}
-.badge:hover ~ .badge-message {
-  display: block;
-}
 
 .badge.aqi-1 {
   background-color: var(--bg-aqi-1);
