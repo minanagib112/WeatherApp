@@ -679,13 +679,18 @@ article.container::-webkit-scrollbar-thumb {
 }
 
 /* footer */
-footer .footer{
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--background);
+}
+footer .footer {
   color: var(--on-background);
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--black-alpha-10);
   padding: 10px;
 }
 footer a {
